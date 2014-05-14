@@ -1,3 +1,13 @@
+    public class Solution {
+    public int singleNumber(int[] A) {
+        int returnNum = 0^A[0];
+        for(int i= 1; i < A.length; i++){
+            returnNum = returnNum ^ A[i];
+        }
+        return returnNum;
+    }
+}
+
     public int singleNumber(int[] A) {
         Set<Integer> newSet = new HashSet<Integer>();
         int returnNum;
@@ -15,3 +25,4 @@
         }
         return returnNum;
     }
+
